@@ -2,14 +2,18 @@
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Node](https://img.shields.io/badge/node-v20.x-green)
-![React](https://img.shields.io/badge/react-v18.x-blue)
+![License](https://img.shields.io/github/license/Santiago-Adm/Smart-Campus?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/Santiago-Adm/Smart-Campus?style=for-the-badge)
+![Code Size](https://img.shields.io/github/languages/code-size/Santiago-Adm/Smart-Campus?style=for-the-badge)
+![Top Language](https://img.shields.io/github/languages/top/Santiago-Adm/Smart-Campus?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/Santiago-Adm/Smart-Campus?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/Santiago-Adm/Smart-Campus?style=for-the-badge)
 
-**Plataforma Integral para la Gestión Digital del Instituto Superior Técnico de Enfermería "María Parado de Bellido"**
-
-[Documentación](#) · [Reportar Bug](#) · [Solicitar Feature](#)
+![Node](https://img.shields.io/badge/node-v20.x-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-v18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/postgresql-15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/mongodb-7-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 </div>
 
