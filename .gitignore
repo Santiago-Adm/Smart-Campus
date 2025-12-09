@@ -1,0 +1,264 @@
+# ============================================
+# SMART CAMPUS - .gitignore OPTIMIZADO
+# ============================================
+# Basado en tu versión + mejoras para Full Stack
+# Última actualización: 2024-12
+
+# ============================================
+# Dependencies
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ⚠️ IMPORTANTE: NO ignorar estos archivos
+# package-lock.json  ← Descomentar SOLO si usas Yarn exclusivamente
+# yarn.lock          ← Descomentar SOLO si usas npm exclusivamente
+
+# Dependency directories
+jspm_packages/
+
+# ============================================
+# Environment Variables (CRITICAL SECURITY)
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Mantener archivos de ejemplo
+!.env.example
+!.env.template
+
+# ============================================
+# Docker
+# ============================================
+docker-compose.override.yml
+
+# Datos persistentes de Docker (no commitear)
+postgres-data/
+mongo-data/
+redis-data/
+mysql-data/
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+npm-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# OS Files
+# ============================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Windows
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# IDE / Editors
+# ============================================
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+
+# ============================================
+# Build Outputs
+# ============================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Backend builds
+backend/dist/
+backend/build/
+
+# Frontend builds
+frontend/build/
+frontend/dist/
+
+# ============================================
+# Test Coverage
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+*.coverage
+htmlcov/
+.pytest_cache/
+test-results/
+junit.xml
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ============================================
+# Cache Files
+# ============================================
+.cache/
+.parcel-cache/
+.eslintcache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ============================================
+# Credentials & Security (NEVER COMMIT THESE)
+# ============================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*-credentials.json
+secrets.json
+credentials/
+
+# ============================================
+# Mobile (React Native) Specific
+# ============================================
+# Metro bundler
+.metro-health-check*
+
+# Android
+mobile/android/.idea
+mobile/android/.gradle
+mobile/android/local.properties
+mobile/android/*.iml
+mobile/android/*.hprof
+mobile/android/.cxx/
+mobile/android/app/build/
+mobile/android/captures/
+
+# iOS
+mobile/ios/Pods/
+mobile/ios/**/*.xcworkspace
+!mobile/ios/*.xcodeproj/project.xcworkspace
+mobile/ios/**/*.xcuserdata
+mobile/ios/**/*.xcscheme
+mobile/ios/*.ipa
+mobile/ios/.xcode.env.local
+mobile/ios/build/
+
+# Fastlane
+mobile/fastlane/report.xml
+mobile/fastlane/Preview.html
+mobile/fastlane/screenshots/
+mobile/fastlane/test_output/
+
+# ============================================
+# Database Files (Local Development)
+# ============================================
+*.sql
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Mantener archivos de schema/seeds
+!backend/database/schema.sql
+!backend/database/seeds/*.sql
+
+# ============================================
+# Media/Assets (Large Files)
+# ============================================
+# Si tienes assets grandes, considera usar Git LFS
+# *.mp4
+# *.mov
+# *.avi
+# *.zip
+# *.tar.gz
+# *.rar
+
+# ============================================
+# Documentation Builds
+# ============================================
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================
+# Misc
+# ============================================
+.eslintcache
+.stylelintcache
+*.tgz
+.yarn-integrity
+
+# Lock de dependencias locales
+.pnp
+.pnp.js
+
+# ============================================
+# IMPORTANT FILES TO KEEP (Never ignore)
+# ============================================
+# ✅ package.json
+# ✅ package-lock.json (npm) or yarn.lock (Yarn)
+# ✅ README.md
+# ✅ LICENSE
+# ✅ docker-compose.yml
+# ✅ Dockerfile
+# ✅ .env.example
+# ✅ .eslintrc.js
+# ✅ .prettierrc
+# ✅ tsconfig.json (si usas TypeScript)
